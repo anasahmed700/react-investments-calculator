@@ -3,15 +3,15 @@ const UserInput = ({onChangeProp, userInputProp}) => {
         <section id="user-input">
             <div className="input-group">
                 <p>
-                    <label htmlFor="initial-investment">Initial Investment</label>
-                    <input type="number" name="initial-investment" required
+                    <label>Initial Investment</label>
+                    <input type="number" required
                         value={userInputProp.initialInvestment}
                         onChange={(event) => onChangeProp('initialInvestment', event.target.value)}
                     />
                 </p>
                 <p>
-                    <label htmlFor="annual-investment">Annual Investment</label>
-                    <input type="number" name="annual-investment" required
+                    <label>Annual Investment</label>
+                    <input type="number" required
                         value={userInputProp.annualInvestment}
                         onChange={(event) => onChangeProp('annualInvestment', event.target.value)}
                     />
@@ -19,15 +19,15 @@ const UserInput = ({onChangeProp, userInputProp}) => {
             </div>
             <div className="input-group">
                 <p>
-                    <label htmlFor="expected-return">Expected Return</label>
-                    <input type="text" name="expected-return" required
+                    <label>Expected Return</label>
+                    <input type="text" required
                         value={userInputProp.expectedReturn}
                         onChange={(event) => onChangeProp('expectedReturn', event.target.value)}
                     />
                 </p>
                 <p>
-                    <label htmlFor="duration">Duration</label>
-                    <input type="number" name="duration" required
+                    <label>Duration</label>
+                    <input type="number"  required
                         value={userInputProp.duration}
                         onChange={(event) => onChangeProp('duration', event.target.value)}
                     />
