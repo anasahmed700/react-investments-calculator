@@ -20,7 +20,7 @@ const UserInput = ({onChangeProp, userInputProp}) => {
             <div className="input-group">
                 <p>
                     <label>Expected Return</label>
-                    <input type="text" required
+                    <input type="number" required
                         value={userInputProp.expectedReturn}
                         onChange={(event) => onChangeProp('expectedReturn', event.target.value)}
                     />
